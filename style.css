@@ -1,0 +1,228 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #f5f5f5;; Light gray background */
+  min-height: 100vh; /* Set minimum height for full viewport */
+  display: flex; /* Use flexbox for overall layout */
+  flex-direction: column; /* Stack elements vertically */
+  background: rgb(105,206,245);
+background: linear-gradient(151deg, rgba(105,206,245,1) 0%, rgba(126,101,242,1) 47%, rgba(105,206,245,1) 100%);
+}
+
+header {
+  /* background-color: #1f1e1e; White background */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 0 0 auto; /* Set header to fixed height */
+  background: rgb(0,0,0);
+background: linear-gradient(151deg, rgba(0,0,0,1) 0%, rgba(42,42,42,1) 47%, rgba(94,94,94,1) 100%);
+}
+
+.name{
+  color: #e6e6e6;
+}
+
+.job{
+  color: #f5f5f5;
+}
+
+h2 {
+  padding-left: 10px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+  color: #333; /* Dark gray heading */
+  padding-left: 10px;
+}
+
+.circle{
+  width: 200px; /* Set the width and height of the circle */
+  height: 200px;
+  border-radius: 10%; /* Create a circular shape */
+  overflow: hidden; /* Hide any overflow content */
+  margin: 0 auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: border-radius 1s ease, transform 0.5s ease;
+  display: block;
+}
+.circle img {
+  width: 100%; /* Make the image fill the circular container */
+  height: auto; /* Maintain the aspect ratio */
+  border: 2px solid #2d2e2d; /* Add a white border */
+}
+.circle:hover{
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+p {
+  color: #666;
+  padding: 10px;
+  margin: 0;
+}
+
+nav {
+  background-color: #c9c6c6;
+  padding: 10px 0; /* Reduced top/bottom padding */
+  display: flex; /* Use flexbox for side-by-side positioning */
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+
+}
+
+nav li {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0; /* Removed margin for buttons to sit together */
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 15px; /* Added padding for buttons */
+  border: 1px solid transparent; /* Added borders for button styling */
+  border-radius: 5px; /* Rounded corners for buttons */
+  transition: background-color 0.2s ease-in-out;
+  float: right;	
+  justify-content: flex-end;
+}
+
+.biography{
+  max-width: 1000px;
+  width: 100%;
+  color: #f5f5f5;   
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #333; /* Hover effect with background color change */
+}
+
+.nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.about {
+  padding-inline: 3%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(151deg, rgba(0,0,0,1) 0%, rgba(42,42,42,1) 47%, rgba(94,94,94,1) 100%);
+}
+
+.about-header {
+  color: #e6e6e6;
+}
+
+.icon {
+  width: 30px;
+}
+
+.projects__content {
+  display: flex;
+  gap: 4%;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 3%;
+  row-gap: 20px;
+  padding-top: 30px;
+}
+
+.contact {
+  padding-inline: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.link {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.link span {
+  margin-top: 7px;
+}
+
+.contact__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__text p {
+  color: #000000;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.project-card {
+  width: 45%;
+  background-color: #fff; /* White background */
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out; 
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+.project-card h3{
+  text-align: center;
+  font-size: 30px;
+}
+
+.project-card p{
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #1f1e1e; /* Light gray background */
+  padding: 10px;
+  text-align: center;
+  flex: 0 0 auto; /* Set footer to fixed height */
+}
+
+.copyright {
+  color: #e6e6e6;
+}
